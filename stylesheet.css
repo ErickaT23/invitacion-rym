@@ -1,0 +1,333 @@
+body {
+    font-family: 'Roboto', sans-serif, 'Dancing Script', cursive; /* Fuente principal para el contenido */
+    font-weight: 300; /* Peso de la fuente delgada para el texto normal */
+    color: #333; /* Color del texto oscuro para buena legibilidad */
+    background-color: #FAF8F0; /* Color de fondo claro */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 20px; /* Añade un poco de relleno alrededor del contenido */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    background-image: url(/Imagenes/fondo1.png);
+    background-repeat: none;
+    background-size: cover;
+}
+/* Estilos para enlaces */
+a {
+    color: #5D5C61; /* Color de los enlaces, ajusta según tu paleta */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+a:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el mouse para indicar interactividad */
+}
+.contenedor-play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    text-align: center;
+}
+.contenedor-play h1{
+    font-family: 'Roboto', sans-serif;
+    color: #9D3333;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+.icono-contenedor {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Ajusta el ancho del contenedor del botón */
+    height: 50px; /* Ajusta la altura del contenedor del botón */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    background-color: #6d3900; /* Color de fondo del botón */
+    color: white; /* Color del ícono */
+}
+.icono-contenedor i {
+    font-size: 22px; /* Ajusta el tamaño del ícono de FontAwesome */
+}
+.contenedor-central {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.contenedor-central h1{
+    font-family: 'Dancing Script', cursive;
+    margin-top: -10px;
+    font-size: 55px;
+    color: #9D3333;
+    font-weight: 200;
+}
+.contenedor-central h2{
+    font-family: 'Dancing Script', cursive;
+    color:  #6d3900;
+    font-size: 80px;
+    margin-top: -50px;
+}
+.contenedor-central p{
+    font-family: 'Roboto', sans-serif;
+    color: #9D3333;
+    font-size: 30px;
+    margin-top: -70px;
+}
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* Ajusta esto según el fondo de tu página */
+    padding: 20px;
+    margin-top: -10px;
+}
+.unidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco para cada unidad */
+    margin: 0 10px;
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    width: 100px; /* Ancho fijo para cada unidad */
+    height: 100px; /* Altura fija para cada unidad */
+}
+.numero {
+    font-size: 2.5em; /* Tamaño grande para los números */
+    color: #6d3900;; /* Color dorado para los números */
+    margin-bottom: 5px; /* Espacio entre número y etiqueta */
+}
+.etiqueta {
+    font-size: 1em; /* Tamaño adecuado para la etiqueta */
+    color: #6d3900;
+    text-transform: uppercase; /* Texto en mayúsculas para las etiquetas */
+    font-weight: 500;
+}
+.contenedor-central h3{
+    font-family: 'Dancing Script', cursive;
+    color: #9D3333;
+    font-size: 30px;
+    margin: 40px;
+}
+.galeria {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+}
+.galeria img{
+    width: 328px;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.imagen-galeria:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en vistas de PC */
+    gap: 10px;
+}
+.card {
+    border: 10px solid #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fef7f3;
+    width: 290px;
+    height: 440px;
+}
+.card img{
+    width: 40%;
+}
+.card h1{
+    font-family: 'Dancing Script', cursive;
+    color: #6d3900;
+    font-size: 40px;
+}
+.card h2{
+    font-family: 'Roboto', sans-serif;
+    color: #6d3900;;
+    font-size: 19px;
+    margin-top: -10px;
+    font-weight: 300;
+}
+.card h3{
+    font-family: 'Roboto', sans-serif;
+    color: #6d3900;;
+    font-size: 16px;
+    margin-top: -5px;
+    font-weight: 300;
+}
+.card h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #6d3900;
+    font-size: 16px;
+    margin-top: -35px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color:#9D3333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#card8{
+    width: 290px;
+    height: 440px;
+}
+#card8 img{
+    width: 100%;
+    height: auto;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-element {
+    opacity: 0; /* Inicia los elementos como invisibles */
+    animation: fadeIn 1s ease-out forwards; /* Aplica la animación */
+}
+h4{
+    font-family: 'Dancing Script', cursive;
+    color: #6d3900;
+    font-size: 40px;
+}
+h5{
+    font-family: 'Dancing Script', cursive;
+    color: #9D3333;
+    font-size: 80px;
+    margin-top: -60px;
+}
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: -140px;
+    color: #6d3900;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .contenedor-central h1{
+        margin-top: 0px;
+        font-size: 45px;
+        font-weight: 200;
+    }
+    .contenedor-central h2{
+        font-size: 50px;
+        margin-top: -30px;
+    }
+    .contenedor-central p{
+        font-size: 25px;
+        margin-top: -40px;
+    }
+    .unidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff; /* Fondo blanco para cada unidad */
+        margin: 0 10px;
+        border-radius: 20px; /* Esquinas redondeadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+        width: 100px; /* Ancho fijo para cada unidad */
+        height: 100px; /* Altura fija para cada unidad */
+    }
+    .numero {
+        font-size: 35px; /* Tamaño grande para los números */
+        padding: 10px;
+    }
+    .etiqueta {
+        font-size: 15px; /* Tamaño adecuado para la etiqueta */
+        padding: 10px;
+        margin-top: -30px;
+    }
+    .contenedor-central h3{
+        margin: 0px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .card img{
+        width: 30%;
+    }
+    .card h1{
+        font-family: 'Dancing Script', cursive;
+        color: #6d3900;
+        font-size: 40px;
+    }
+    .card h2{
+        font-family: 'Roboto', sans-serif;
+        color: #6d3900;;
+        font-size: 19px;
+        margin-top: -10px;
+        font-weight: 300;
+    }
+    .card h3{
+        font-family: 'Roboto', sans-serif;
+        color: #6d3900;;
+        font-size: 16px;
+        margin-top: 0px;
+        font-weight: 300;
+    }
+    .card h4{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #6d3900;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color:#9D3333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .galeria {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, usa una sola columna */
+    }
+    .contenedor-cards {
+        grid-template-columns: 1fr; /* Cambia a una sola columna para pantallas más pequeñas */
+    }
+    h4{
+        font-family: 'Dancing Script', cursive;
+        color: #6d3900;
+        font-size: 25px;
+    }
+    h5{
+        font-family: 'Dancing Script', cursive;
+        color: #9D3333;
+        font-size: 40px;
+        margin-top: -30px;
+    }
+    h6{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        margin-top: -60px;
+        color: #6d3900;
+        font-weight: 400;
+    }
+}
