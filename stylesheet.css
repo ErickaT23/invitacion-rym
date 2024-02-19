@@ -6,7 +6,7 @@ body {
     margin: 0; /* Elimina los márgenes predeterminados */
     padding: 20px; /* Añade un poco de relleno alrededor del contenido */
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
-    background-image: url(/Imagenes/fondo1.png);
+    background-image: url(/Imagenes/Diseño\ sin\ título\ \(73\).png);
     background-repeat: none;
     background-size: cover;
 }
@@ -30,7 +30,7 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     color: #9D3333;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 500;
     margin-top: 5px;
 }
 .icono-contenedor {
